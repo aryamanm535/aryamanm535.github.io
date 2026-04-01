@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #121212;
+  color: #a3a3a3;
+  line-height: 1.6;
+}
+
+#page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+.section {
+  background: rgba(24, 24, 27, 0.9);
+  border: 1px solid #27272a;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+.navbar,
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-left,
+.form-row label,
+button,
+.badge,
+.accent,
+.interest-box p {
+  font-weight: bold;
+}
+
+.nav-left,
+h1,
+h2,
+h3,
+.form-row label {
+  color: #fff;
+}
+
+.nav-left {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-right a {
+  margin-left: 16px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 28px;
+}
+
+#profile-image {
+  width: 170px;
+  max-width: 100%;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 0 0 8px;
+}
+
+h2 {
+  margin: 0 0 16px;
+}
+
+h3 {
+  margin: 0 0 10px;
+}
+
+.intro,
+.contact-form {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: 0 auto 22px;
+}
+
+.accent {
+  color: #14e3a9;
+}
+
+a,
+.timeline-item,
+.project-card,
+button,
+input,
+textarea {
+  transition: 0.2s ease;
+}
+
+a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #14e3a9;
+}
+
+.hero-links {
+  margin-top: 16px;
+}
+
+.hero-links a,
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 8px;
+  padding: 10px 16px;
+  border: 1px solid #3f3f46;
+  border-radius: 10px;
+  background: #1c1c1f;
+  color: #e4e4e7;
+}
+
+.hero-links a:hover,
+.github-link:hover {
+  background: #14e3a9;
+  color: #121212;
+  border-color: #14e3a9;
+  transform: translateY(-2px);
+}
+
+.interest-box {
+  background: linear-gradient(135deg, rgba(20, 227, 169, 0.08), rgba(20, 227, 169, 0.02));
+  border: 1px solid rgba(20, 227, 169, 0.25);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 20px 0 18px;
+}
+
+.interest-box h3 {
+  color: #14e3a9;
+  margin-bottom: 8px;
+}
+
+.interest-box p {
+  margin: 0;
+  color: #e4e4e7;
+  font-size: 1.05rem;
+}
+
+.skills {
+  margin-top: 18px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 6px 8px 0 0;
+  padding: 6px 12px;
+  background: rgba(20, 227, 169, 0.1);
+  color: #14e3a9;
+  border: 1px solid rgba(20, 227, 169, 0.25);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.timeline-item,
+.project-card {
+  background: #1a1a1d;
+  border: 1px solid #2f2f35;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.timeline-item {
+  border-left: 3px solid #14e3a9;
+  border-radius: 0 12px 12px 0;
+}
+
+.timeline-item:hover {
+  background: #1a1d24;
+  transform: translateX(8px);
+  box-shadow: 0 0 0 1px rgba(20, 227, 169, 0.12);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(20, 227, 169, 0.35);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.github-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.form-row {
+  margin-bottom: 18px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  background: #16181d;
+  border: 1px solid #323743;
+  border-radius: 12px;
+  color: #e4e4e7;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #14e3a9;
+  box-shadow: 0 0 0 3px rgba(20, 227, 169, 0.12);
+}
+
+button {
+  padding: 12px 20px;
+  background: #14e3a9;
+  color: #121212;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .navbar,
+  .project-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right a {
+    margin: 0 14px 0 0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 22px;
+  }
+}
